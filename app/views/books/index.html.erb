@@ -10,7 +10,9 @@
   <tr>
    <td><%= book.title %></td>
    <td><%= book.body %></td>
+   <td><a href="<%=book_path(book.id) %>">show</a></td>
   </tr>
+
 </table>
 <% end %>
 

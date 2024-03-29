@@ -2,7 +2,6 @@ class BooksController < ApplicationController
   def index
     @books = Book.all
     @book = Book.new
-    @id = params[:id]
   end
 
   def create

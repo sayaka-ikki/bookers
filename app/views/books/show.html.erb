@@ -1,9 +1,13 @@
+<div class=notice>
+  <%= flash[:notice] %>
+</div>
+
 
 <p>Title:</p>
 <p><%= @book.title %></p>
 <p>Body:</p>
 <p><%= @book.body %></p>
 
-<a href="/books/:id/edit(.:format) ">Edit</a>
+<%= link_to "Edit", edit_book_path(@book.id),class: "btn-link" %>
 <a href="/books">Back</a>
 

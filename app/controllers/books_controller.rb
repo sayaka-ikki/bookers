@@ -13,6 +13,7 @@ class BooksController < ApplicationController
 
   def show
     @book = Book.find(params[:id])
+    flash[:notice] = "Book was successfully created.."
   end
 
   def edit
@@ -28,6 +29,7 @@ class BooksController < ApplicationController
   def destroy
     book = Book.find(params[:id])
     book.destroy
+    flash[:notice] = "Book was successfully destroyed."
     redirect_to '/books'
   end
 

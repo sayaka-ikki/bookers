@@ -74,10 +74,6 @@ td {
     unicode-bidi: isolate;
 }
 
-a:link {
-  color: #000000
-
-}
 
 .btn-link {
   background: none;
@@ -85,4 +81,24 @@ a:link {
   color: black;
   text-decoration: underline;
   cursor: pointer;
+}
+
+
+.btn-link:hover {
+
+    color: #ffffff;             /* 文字を白色 */
+
+    /*text-decoration: none;       下線を消す */
+
+    background-color: black;  /* 背景色を赤色 */
+
+}
+
+.error_explanation {
+    width: 450px;
+    border: 2px solid red;
+    padding: 7px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
 }

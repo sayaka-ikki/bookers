@@ -12,10 +12,14 @@
 
 <%= form_with model: @book do |f| %>
 
-  <p>Title</p>
+  <div>
+    <label>Title</label>
+  </div>
   <%= f.text_field :title %>
 
-  <p>Body</p>
+  <div>
+    <lavel>Body</lavel>
+  </div>
   <%= f.text_area :body %>
 
   <br><%= f.submit 'Update Book' %>
